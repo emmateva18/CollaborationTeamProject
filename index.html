@@ -1,425 +1,70 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 
 <head>
-  <title>Europe and Me</title>
-  <meta charset="UTF-8">
+    <title>Europe and Me</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
 </head>
-<style>
-html
-{ height: 100%;}
-
-*
-{ margin: 0;
-  padding: 0;}
-
-body
-{ font: normal .80em 'trebuchet ms', arial, sans-serif;
-    background:#F0EFE2 url(background.png) repeat;
-  color: #000;}
-
-p
-{ padding: 0 0 20px 0;
-  line-height: 1.7em;}
-
-img
-{ border: 0;}
-
-h1, h2, h3, h4, h5, h6 
-{ font: normal 175% 'century gothic', arial, sans-serif;
-  color: #000;
-  margin: 0 0 15px 0;
-  padding: 15px 0 5px 0;}
-
-h2
-{ font: normal 175% 'century gothic', arial, sans-serif;}
-
-h4, h5, h6
-{ margin: 0;
-  padding: 0 0 5px 0;
-  font: normal 120% arial, sans-serif;}
-
-h5, h6
-{ font: italic 95% arial, sans-serif;
-  padding: 0 0 15px 0;}
-
-a, a:hover
-{ outline: none;
-  text-decoration: underline;
-  color: #000;}
-
-a:hover
-{ text-decoration: none;}
-
-.left
-{ float: left;
-  width: auto;
-  margin-right: 10px;}
-
-.right
-{ float: right; 
-  width: auto;
-  margin-left: 10px;}
-
-.center
-{ display: block;
-  text-align: center;
-  margin: 20px auto;}
-
-blockquote
-{ margin: 20px ; 
-  padding: 10px 20px 20px;
-  border: 1px solid #E5E5DB;
-  background: #FFF;}
-
-ul
-{ margin: 2px 0 22px 17px;}
-
-ul li
-{ list-style-type: circle;
-  margin: 6px ; 
-  padding: 4px 5px;}
-
-ol
-{ margin: 8px 0 22px 20px;}
-
-ol li
-{ margin:11px ;}
-
-#main, #logo, #menubar, #site_content, #footer
-{ margin-left: auto; 
-  margin-right: auto;}
-
-#header
-{ background: transparent;
-  height: 202px;}
-
-#logo
-{ width: 898px;
-  position: relative;
-  height: 148px;
-  border-bottom: 2px solid #FFF;}
-
-#logo #logo_text 
-{ position: absolute; 
-  top: 20px;
-  left: 0;}
-
-#logo h1, #logo h2
-{ font: normal 300% 'century gothic', arial, sans-serif;
-  border-bottom: 0;
-  text-transform: none;
-  margin: 0;}
-
-#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover 
-{ padding: 22px 0 0 0;
-  color: #FFF;
-  letter-spacing: -1px;
-  text-decoration: none;}
-
-#logo_text h1 a .logo_colour
-{ color: #FFF;}
-
-#logo_text h2
-{ font-size: 100%;
-  padding: 4px ;
-  color: #FFF;}
-
-#menubar
-{ width: 898px;
-  height: 52px;
-  padding: 0;
-  background: #000;} 
-
-ul#menu, ul#menu li
-{ float: left;
-  margin: 0; 
-  padding: 0;}
-
-ul#menu li
-{ list-style: none;}
-
-ul#menu li a
-{ letter-spacing: 0.1em;
-  font: normal 100% arial, sans-serif;
-  display: block; 
-  float: left; 
-  height: 15px;
-  margin: 10px 0 0 10px;
-  padding: 6px 20px 6px 20px;
-  text-align: center;
-  color: #FFF;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: transparent;} 
-
-ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
-{ color: #FFF;
-  background: transparent url(transparent_light.png) repeat;}
-
-#site_content
-{ width: 854px;
-  overflow: hidden;
-  margin: 0 auto 0 auto;
-  padding: 0 24px 20px 20px;
-  background: #FFF;} 
-
-.sidebar
-{ float: right;
-  width: 200px;
-  padding: 0 15px 20px 15px;}
-
-.sidebar ul
-{ width: 198px; 
-  padding: 4px 0 0 0; 
-  margin: 4px 0 30px 0;}
-
-.sidebar li
-{ list-style: none; 
-  padding: 0 0 7px 0; }
-
-.sidebar li a, .sidebar li a:hover
-{ padding: 0 0 0 40px;
-  display: block;
-  background: transparent url(link.png) no-repeat left center;} 
-
-.sidebar li a.selected
-{ color: #7E2451;
-  text-decoration: none;} 
-
-
-#content
-{ text-align: left;
-  float: left;
-  width: 595px;
-  padding: 0;}
-
-#content ul
-{ margin: 2px 0 22px 0px;}
-
-#content ul li
-{ list-style-type: none;
-  background: url(bullet.png) no-repeat;
-  margin: 0 0 6px 0; 
-  padding: 0 0 4px 25px;
-  line-height: 1.5em;}
-
-#footer
-{ width: 898px;
-  font: normal 100% 'lucida sans unicode', arial, sans-serif;
-  height: 33px;
-  padding: 24px 0 5px 0;
-  text-align: center; 
-  background: transparent;
-  color: #FFF;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;}
-
-#footer a
-{ color: #FFF;
-  text-decoration: none;}
-
-#footer a:hover
-{ color: #FFF;
-  text-decoration: underline;}
-
-.search
-{ color: #5D5D5D; 
-  border: 1px solid #BBB; 
-  width: 134px; 
-  padding: 4px; 
-  font: 100% arial, sans-serif;}
-
-#colours
-{ height: 0px;
-  text-align: right;
-  padding: 66px 16px 0px 300px;}
-  
-.form_settings
-{ margin: 15px 0 0 0;}
-
-.form_settings p
-{ padding: 0 0 4px 0;}
-
-.form_settings span
-{ float: left; 
-  width: 200px; 
-  text-align: left;}
-  
-.form_settings input, .form_settings textarea
-{ padding: 5px; 
-  width: 299px; 
-  font: 100% arial; 
-  border: 1px solid #E5E5DB; 
-  background: #FFF; 
-  color: #47433F;}
-  
-.form_settings .submit
-{ font: 100% arial; 
-  border: 1px solid; 
-  width: 99px; 
-  margin: 0 0 0 212px; 
-  height: 33px;
-  padding: 2px 0 3px 0;
-  cursor: pointer; 
-  background: #000; 
-  color: #FFF;}
-
-.form_settings textarea, .form_settings select
-{ font: 100% arial; 
-  width: 299px;}
-
-.form_settings select
-{ width: 310px;}
-
-.form_settings .checkbox
-{ margin: 4px 0; 
-  padding: 0; 
-  width: 14px;
-  border: 0;
-  background: none;}
-
-.separator
-{ width: 100%;
-  height: 0;
-  border-top: 1px solid #D9D5CF;
-  border-bottom: 1px solid #FFF;
-  margin: 0 0 20px 0;}
-  
-table
-{ margin: 10px 0 30px 0;}
-
-table tr th, table tr td
-{ background: #3B3B3B;
-  color: #FFF;
-  padding: 7px 4px;
-  text-align: left;}
-  
-table tr td
-{ background: #F0EFE2;}
- 
- 
- 
-.main {   
-  -ms-flex: 70%; 
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-  
-}
-.row {  
-  display: -ms-flexbox; 
-  display: flex;
-  -ms-flex-wrap: wrap; 
-  flex-wrap: wrap;
-}
-
-.side {
-  -ms-flex: 30%;
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("gora.jpg");
-  height: 130px;
-  width:898px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-}
-/* Container needed to position the button. Adjust the width as needed */
-.container {
-  position: relative;
-  width: 50%;
-}
-
-/* Make the image responsive */
-.container img {
-  width: 100%;
-  height: auto;
-}
-
-/* Style the button and place it in the middle of the container/image */
-.container .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.container .btn:hover {
-  background-color: black;
-}
-
-</style>
-
 <body>
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <div id="logo_text">
-          <div class="hero-image">
-            
-                <h1>Europe and me</a></h1>
-           </div>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <div class="hero-image">
+
+                        <h1>Europe and me</a></h1>
+                    </div>
+                </div>
+            </div>
+            <div id="menubar">
+                <ul id="menu">
+
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="oureuropianfamily.html">Our Europian family</a></li>
+                    <li><a href="ourroots.html">Our roots</a></li>
+                    <li><a href="covid-19.html">Covid-19</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-     <div id="menubar">
-        <ul id="menu">
-          
-         <li><a href="index.html">Main</a></li>
-		 <li><a href="interviews.html">Our Europian family</a></li>
-          <li><a href="Aboutus.html">Our roots</a></li>
-		  <li><a href="Covid-19.html">Covid-19</a></li>
+        <div id="site_content">
 
-        </ul>
-      </div>
-    </div>
-    <div id="site_content">
+            <div class="main">
+                <div class="row">
+                    <div class="side">
+                        <h2>United in diversity</h2>
+                        <img src="es.jpeg" style="height:150px;width:250px;">
+                        <img src="europa.jpeg" style="height:150px;width:250px;">
+                        <img src="euro.jpeg" style="height:150px;width:250px;">
+                        <br></br>
+                        <br><br>
+                        <h3>
+                            We wanted to make a source for all of the europians to see different countres.
+                            And to know them better before going there. We asked different people at different age
+                            and countries that they live in to talk about their everyday life.
+                        </h3>
+                        <br></br>
 
-	   <div class="main">
-    <div class="row">
-  <div class="side">
-    <h2 >United in diversity</h2>
-	<img src="es.jpeg" style="height:150px;width:250px;">
-	<img src="europa.jpeg" style="height:150px;width:250px;">
-  <img src="euro.jpeg" style="height:150px;width:250px;">
-  <br></br>
-  <br><br>
-	<h3>We wanted to make a source for all of the europians to see different countres.
-    And to know them better before going there. We asked different people at different age
-  and countries that they live in to talk about their everyday life. </h3>
-  <br></br>
+                        <div class="row">
+                            <div class="column">
+                                <img src="germanytedi.jpg" style="height:400px;width:800px;">
+                                <img src="maltaalexa.jpg" style="height:400px;width:800px;">
+                                <img src="serbiaanastasijia.jpg" style="height:400px;width:800px;">
 
-  <div class="row">
-    <div class="column">
-      <img src="germanytedi.jpg" style="height:400px;width:800px;">
-      <img src="maltaalexa.jpg" style="height:400px;width:800px;">
-      <img src="serbiaanastasijia.jpg" style="height:400px;width:800px;">
-    
-    </div>
-    
+                            </div>
 
-	
-  </div>
-  <div class="main">
-    <h2>This space we will leave for art and international projects that all europians can send us</h2>
-    <h4>This is our masterpiece.</h4>
-   <center> <div ><img style="width:400px;height:200px;"src="ocean.jpg"></div></center>
-   <center> <div ><img style="width:400px;height:200px;"src="ocean.jpg"></div></center>
-      </div>
-    </div>
-    
-  </div>
-  
+
+
+                        </div>
+                        <div class="main">
+                            <h2>This space we will leave for art and international projects that all europians can send us</h2>
+                            <h4>This is our masterpiece.</h4>
+                            <center> <div><img style="width:400px;height:200px;" src="ocean.jpg"></div></center>
+                            <center> <div><img style="width:400px;height:200px;" src="ocean.jpg"></div></center>
+                        </div>
+                    </div>
+
+                </div>
+
 </body>
 </html>
