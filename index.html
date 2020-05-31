@@ -5,9 +5,10 @@
     <title>Europe and Me</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <link rel="icon"
-          type="image/png"
-          href="favicon.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+
 </head>
 <body>
     <div id="main">
@@ -15,7 +16,7 @@
             <div id="logo">
                 <div id="logo_text">
                     <div class="hero-image">
-                        <h1>Europe and me</h1>
+                        <h1>Europe and Me</h1>
                     </div>
                 </div>
             </div>
@@ -34,7 +35,7 @@
                 <div class="row">
                     <div class="side">
                         <h2>United in diversity</h2>
-                        <img src="images/es.jpeg" style="height:150px;width:250px;">
+                        <img src="images/es.jpg" style="height:150px;width:250px;padding-left:40px;">
                         <img src="images/europa.jpeg" style="height:150px;width:250px;">
                         <img src="images/euro.jpeg" style="height:150px;width:250px;">
                         <br>
@@ -45,25 +46,39 @@
                             and countries that they live in to talk about their everyday life.
                         </h3>
                         <br>
-                        <div class="row">
-                            <div class="column">
-                                <img src="images/germanytedi.jpg" style="height:400px;width:800px;">
-                                <img src="images/maltaalexa.jpg" style="height:400px;width:800px;">
-                                <img src="images/serbiaanastasijia.jpg" style="height:400px;width:800px;">
-
-                            </div>
-                        </div>
-                        <div class="main">
-                            <h2>This space we will leave for art and international projects that all europians can send us</h2>
-                            <h4>This is our masterpiece.</h4>
-                            <center> <div><img style="width:400px;height:200px;" src="images/ocean.jpg"></div></center>
-                            <center> <div><img style="width:400px;height:200px;" src="images/ocean.jpg"></div></center>
-                        </div>
                     </div>
+                </div>
+                <h2>Here are some of our special places:</h2>
+                <div class="w3-content w3-display-container">
+                    <a href="pages for countries/serbia.html"><img class="mySlides" src="images/serbia.jpg" style="width:99%; padding-left:40px; height:500px;"></a>
+                    <a href="pages for countries/estonia3.html"><img class="mySlides" src="images/estonia.png" style="width:99%; padding-left:40px; height:500px;"></a>
+                    <a href="pages for countries/malta.html"><img class="mySlides" src="images/maltaalexa.jpg" style="width:99%; padding-left:40px; height:500px;"></a>
 
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)" style="margin-left:30px">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
 </body>
 </html>

@@ -353,3 +353,7 @@ table {
     background-size: cover;
     text-align :left;
 }
+
+.mySlides {
+    display: none;
+}
