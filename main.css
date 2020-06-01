@@ -1,7 +1,4 @@
-﻿#map {
-    height: 100%;
-}
-
+﻿
 /*Pagination*/
 .pagination {
   display: inline-block;
@@ -56,7 +53,16 @@
 .button1 {
     border-radius: 2px;
 }
-
+.slideshowbutton {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    margin: 4px 2px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
 html {
     height: 100%
 }
